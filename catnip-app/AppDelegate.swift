@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  catnip-app
-//
-//  Created by Liu Yang  on 09/10/2017.
-//  Copyright © 2017 Liu Yang . All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
