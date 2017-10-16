@@ -14,6 +14,11 @@
 		113AC40E1F8B691A00EAEE55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 113AC40C1F8B691A00EAEE55 /* LaunchScreen.storyboard */; };
 		11BDBBD91F949DD50048D69E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BDBBD81F949DD50048D69E /* LoginViewModel.swift */; };
 		11BDBBDC1F949DFD0048D69E /* LoginCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BDBBDB1F949DFD0048D69E /* LoginCredential.swift */; };
+		11F748E91F94B86A0048E4C5 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F748E81F94B86A0048E4C5 /* MainScreenViewController.swift */; };
+		11F748EB1F94BA6C0048E4C5 /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F748EA1F94BA6C0048E4C5 /* MainScreenViewModel.swift */; };
+		11F748EE1F94BEF10048E4C5 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F748ED1F94BEF10048E4C5 /* LoginService.swift */; };
+		11F748F01F94BF2C0048E4C5 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F748EF1F94BF2C0048E4C5 /* APIError.swift */; };
+		11F748F31F94C0A60048E4C5 /* LoginCredentialTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F748F21F94C0A60048E4C5 /* LoginCredentialTranslator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		113AC40F1F8B691A00EAEE55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11BDBBD81F949DD50048D69E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		11BDBBDB1F949DFD0048D69E /* LoginCredential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCredential.swift; sourceTree = "<group>"; };
+		11F748E81F94B86A0048E4C5 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		11F748EA1F94BA6C0048E4C5 /* MainScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewModel.swift; sourceTree = "<group>"; };
+		11F748ED1F94BEF10048E4C5 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		11F748EF1F94BF2C0048E4C5 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		11F748F21F94C0A60048E4C5 /* LoginCredentialTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCredentialTranslator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,8 @@
 		113AC4021F8B691A00EAEE55 /* catnip-app */ = {
 			isa = PBXGroup;
 			children = (
+				11F748F11F94C0980048E4C5 /* translator */,
+				11F748EC1F94BEE30048E4C5 /* service */,
 				11BDBBDA1F949DE70048D69E /* model */,
 				11BDBBD71F949D8B0048D69E /* viewmodel */,
 				11BDBBD61F949CAA0048D69E /* controller */,
@@ -74,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				113AC4051F8B691A00EAEE55 /* LoginViewController.swift */,
+				11F748E81F94B86A0048E4C5 /* MainScreenViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -82,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				11BDBBD81F949DD50048D69E /* LoginViewModel.swift */,
+				11F748EA1F94BA6C0048E4C5 /* MainScreenViewModel.swift */,
 			);
 			path = viewmodel;
 			sourceTree = "<group>";
@@ -90,8 +104,25 @@
 			isa = PBXGroup;
 			children = (
 				11BDBBDB1F949DFD0048D69E /* LoginCredential.swift */,
+				11F748EF1F94BF2C0048E4C5 /* APIError.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		11F748EC1F94BEE30048E4C5 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				11F748ED1F94BEF10048E4C5 /* LoginService.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		11F748F11F94C0980048E4C5 /* translator */ = {
+			isa = PBXGroup;
+			children = (
+				11F748F21F94C0A60048E4C5 /* LoginCredentialTranslator.swift */,
+			);
+			path = translator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,10 +197,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11F748E91F94B86A0048E4C5 /* MainScreenViewController.swift in Sources */,
+				11F748F31F94C0A60048E4C5 /* LoginCredentialTranslator.swift in Sources */,
 				113AC4061F8B691A00EAEE55 /* LoginViewController.swift in Sources */,
 				11BDBBDC1F949DFD0048D69E /* LoginCredential.swift in Sources */,
 				113AC4041F8B691A00EAEE55 /* AppDelegate.swift in Sources */,
 				11BDBBD91F949DD50048D69E /* LoginViewModel.swift in Sources */,
+				11F748F01F94BF2C0048E4C5 /* APIError.swift in Sources */,
+				11F748EB1F94BA6C0048E4C5 /* MainScreenViewModel.swift in Sources */,
+				11F748EE1F94BEF10048E4C5 /* LoginService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
