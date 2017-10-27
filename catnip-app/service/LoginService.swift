@@ -1,11 +1,22 @@
 import UIKit
 
 class LoginService {
-    private let loginCredentialTranslator = LoginCredentialTranslator()
+    private let urlSessionConfiguration = URLSessionConfiguration.default
+    private let urlLogin = NSURL(string: "http://localhost:8080/login/")
+    private let apiErrorTranslator = APIErrorTranslator()
     
     func login(credential: LoginCredential, success: ((String) -> ())?, failure: ((APIError) -> ())?) {
-        let cred = loginCredentialTranslator.translate(credential: credential)
-        // faking API call and call success directly
-        success?(cred)
+        if let url = urlLogin?.absoluteURL {
+            let session = URLSession(configuration: urlSessionConfiguration)
+            let task = session.dataTask(with: url, completionHandler: { (data, response, error) in
+                if let err = self.apiErrorTranslator.translate(response: response, error: error) {
+                    failure?(err)
+                }
+                else {
+                    
+                }
+            })
+            task.resume()
+        }
     }
 }

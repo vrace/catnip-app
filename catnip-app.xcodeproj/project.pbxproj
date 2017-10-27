@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		111E8A5F1FA318C800E07A9F /* APIErrorTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111E8A5E1FA318C800E07A9F /* APIErrorTranslator.swift */; };
 		113AC4041F8B691A00EAEE55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113AC4031F8B691A00EAEE55 /* AppDelegate.swift */; };
 		113AC4061F8B691A00EAEE55 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113AC4051F8B691A00EAEE55 /* LoginViewController.swift */; };
 		113AC4091F8B691A00EAEE55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 113AC4071F8B691A00EAEE55 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		111E8A5E1FA318C800E07A9F /* APIErrorTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorTranslator.swift; sourceTree = "<group>"; };
 		113AC4001F8B691A00EAEE55 /* catnip-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "catnip-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		113AC4031F8B691A00EAEE55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		113AC4051F8B691A00EAEE55 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				11F748F21F94C0A60048E4C5 /* LoginCredentialTranslator.swift */,
+				111E8A5E1FA318C800E07A9F /* APIErrorTranslator.swift */,
 			);
 			path = translator;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				113AC4041F8B691A00EAEE55 /* AppDelegate.swift in Sources */,
 				11BDBBD91F949DD50048D69E /* LoginViewModel.swift in Sources */,
 				11F748F01F94BF2C0048E4C5 /* APIError.swift in Sources */,
+				111E8A5F1FA318C800E07A9F /* APIErrorTranslator.swift in Sources */,
 				11F748EB1F94BA6C0048E4C5 /* MainScreenViewModel.swift in Sources */,
 				11F748EE1F94BEF10048E4C5 /* LoginService.swift in Sources */,
 			);

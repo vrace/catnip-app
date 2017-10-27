@@ -1,5 +1,9 @@
 import UIKit
 
 class LoginViewModel {
-    var credential: LoginCredential?
+    var loginError: APIError?
+    
+    var loginErrorMessage: String? {
+        return loginError?.message
+    }
 }
