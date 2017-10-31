@@ -22,7 +22,8 @@ class MainScreenViewController: UIViewController {
         performSegue(withIdentifier: "loginSegue", sender: self)
     }
     
-    private func onLoginSuccess(key: String) {
+    private func onLoginSuccess(loginKey: LoginKey) {
+        let key = loginKey.key
         print("Login Key: \(key)")
         viewModel.loginKey = key
     }

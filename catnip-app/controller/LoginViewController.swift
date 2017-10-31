@@ -8,7 +8,7 @@ class LoginViewController: UIViewController, URLSessionDelegate {
     private let viewModel = LoginViewModel()
     private let loginService = LoginService()
     
-    var loginSuccess: ((String) -> ())?
+    var loginSuccess: ((LoginKey) -> ())?
     
     override func viewDidLoad() {
         labelLoginError.text = ""
@@ -25,7 +25,7 @@ class LoginViewController: UIViewController, URLSessionDelegate {
                            failure: { [weak self] error in self?.onLoginFailure(error: error) })
     }
     
-    private func onLoginSuccess(key: String) {
+    private func onLoginSuccess(key: LoginKey) {
         loginSuccess?(key)
         dismiss(animated: true, completion: nil)
     }
